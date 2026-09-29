@@ -1,0 +1,13 @@
+K74 - 12D2 | Website Vercel v3
+
+Đã sửa:
+1. Phông chữ dùng Segoe UI/Arial thống nhất, có fallback hỗ trợ tiếng Việt.
+2. Ảnh lớp và QR được nhúng trực tiếp trong index.html để không phụ thuộc đường dẫn ảnh khi deploy Vercel.
+3. Giữ lại anh-lop.jpg và qr.jpg như bản dự phòng.
+4. Lời ngỏ đã thay theo nội dung mới về 80 năm thành lập Trường THPT Tân Trào (1946 – 2026).
+5. Giữ nguyên giao diện 2 bước: nhập thông tin -> mới hiện QR.
+
+Deploy:
+- Upload index.html, anh-lop.jpg, qr.jpg vào GitHub.
+- Vercel -> Import repository -> Deploy.
+- Nếu GitHub đã có repository cũ, chỉ cần thay index.html bằng file v3 này rồi commit.
