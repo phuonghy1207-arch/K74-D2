@@ -106,61 +106,6 @@ footer{background:#061f43;color:white;text-align:center;padding:45px 20px;line-h
     <div class="photo">KHOẢNH KHẮC KỶ NIỆM<br>"anh ky niem.jgp"</div>
   </div>
 </div>
-</section>
-<div class="card" id="chuyen-khoan">
-            <h3>💳 Đóng Góp & Chuyển Khoản</h3>
-            
-            <div class="donation-steps-grid">
-                <!-- BƯỚC 1 -->
-                <div class="step-box">
-                    <div class="step-title">Bước 1: Thông tin người đóng góp</div>
-                    <form id="donationForm" onsubmit="generateQR(event)">
-                        <div class="form-group">
-                            <label>Họ và tên *</label>
-                            <input type="text" id="name" placeholder="Nguyễn Văn A" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Số điện thoại *</label>
-                            <input type="text" id="phone" placeholder="09xx xxx xxx" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Số tiền (VNĐ) *</label>
-                            <input type="text" id="amount" placeholder="1.000.000" required>
-                            <div class="preset-amounts">
-                                <button type="button" class="preset-btn" onclick="setAmount('200.000')">200.000</button>
-                                <button type="button" class="preset-btn" onclick="setAmount('500.000')">500.000</button>
-                                <button type="button" class="preset-btn" onclick="setAmount('1.000.000')">1.000.000</button>
-                                <button type="button" class="preset-btn" onclick="setAmount('2.000.000')">2.000.000</button>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Lời nhắn (tuỳ chọn)</label>
-                            <input type="text" id="message" placeholder="Tri ân mái trường">
-                        </div>
-                        <button type="submit" class="submit-btn">⚡ Ghi nhận đóng góp & Tạo mã QR</button>
-                    </form>
-                </div>
-
-                <!-- BƯỚC 2 -->
-                <div class="step-box">
-                    <div class="step-title">Bước 2: Quét mã chuyển khoản</div>
-                    <div class="qr-placeholder" id="qrContainer">
-                        <div class="lock-icon" id="lockIcon">🔒</div>
-                        <img id="qrImage" src="" alt="Mã QR Chuyển Khoản">
-                        <p id="qrInstructions" style="font-size: 13px; color: #64748b; margin-top: 10px;">
-                            Hoàn tất Bước 1 để nhận mã QR.<br>Sau khi bấm "Ghi nhận đóng góp", mã QR gắn riêng mã đối chiếu và số tiền của bạn sẽ hiển thị tại đây.
-                        </p>
-                        <div id="bankDetailsText" style="display:none; font-size: 13px; text-align: left; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 10px;">
-                            <p style="margin: 4px 0;"><strong>Ngân hàng:</strong> BIDV</p>
-                            <p style="margin: 4px 0;"><strong>STK:</strong> 3411486617</p>
-                            <p style="margin: 4px 0;"><strong>Chủ TK:</strong> HOÀNG KHÁNH VÂN</p>
-                            <p style="margin: 4px 0;" id="transferSyntax"><strong>Nội dung:</strong> ...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<footer>
   <div><b>TRƯỜNG THPT TÂN TRÀO · K74 - 12D2</b></div>
   <div>Kỷ niệm 80 năm thành lập trường · 1946 — 2026</div>
   <div style="margin-top:12px;opacity:.8">Một mái trường — Một miền ký ức — Một tình yêu còn mãi.</div>
